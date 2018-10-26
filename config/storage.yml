@@ -32,3 +32,9 @@ local:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
+
+cloudinary:
+  service: Cloudinary
+  cloud_name: <%= ENV['CLOUD_USERNAME'] %>
+  api_key: <%= ENV['CLOUD_API_KEY'] %>
+  api_secret: <%= ENV['CLOUD_SECRET'] %>
